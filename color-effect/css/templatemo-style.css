@@ -1,0 +1,129 @@
+/*
+Impulse Template
+http://www.templatemo.com/tm-469-impulse
+*/
+
+
+.parallax-section {
+	background-attachment: fixed !important;
+	background-size: cover !important;
+}
+/* preloader section */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: none repeat scroll 0 0 #fff;
+	background: none repeat scroll 0 0 #f9f9f9;
+}
+.sk-spinner-rotating-plane.sk-spinner {
+	width: 40px;
+	height: 40px;
+	background-color: #eb5424;
+	border-radius: 50%;
+	-webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+	animation: sk-rotatePlane 1.2s infinite ease-in-out;
+}
+@keyframes sk-rotatePlane {
+0% {
+-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+}
+50% {
+-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+}
+100% {
+-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+}
+}
+
+/* portfolio section */
+#portfolio {
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+#portfolio h2 {
+	line-height: 20px;
+}
+#portfolio h3 {
+	color: #eb5424;
+	padding-bottom: 60px;
+}
+#portfolio a {
+	text-decoration: none;
+}
+#portfolio img {
+	border-radius: 1px;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	/*opacity: 0.8;*/
+	margin-bottom: 34px;
+	/*opacity: 0.6;*/
+	transition: all 0.4s ease-in-out;
+}
+#portfolio img:hover {
+	opacity: 0.7;
+}
+
+
+
+@media screen and (max-width:980px) {
+.navbar-default .navbar-nav li a {
+	padding-right: 14px;
+	padding-left: 14px;
+	font-size: 13px;
+}
+#intro h2 {
+	font-size: 32px;
+}
+#work .title {
+	padding: 80px 20px 20px 20px;
+}
+.portfolio-thumb .portfolio-overlay {
+	padding-top: 24px;
+}
+}
+@media (max-width:767px) {
+.navbar-brand {
+	padding-top: 6px;
+}
+}
+@media (max-width:400px) {
+#home h1 {
+	font-size: 32px;
+}
+#home h2 {
+	font-size: 22px;
+}
+#intro h2 {
+	font-size: 20px;
+}
+.portfolio-thumb .portfolio-overlay {
+	padding-top: 60px;
+}
+}
+
+
+/*Additional Css*/
+.box-border{
+	border: 3px solid #b59e5b;
+	padding-top: 2em;
+}
